@@ -1,0 +1,195 @@
+<html>
+
+	<head>
+		<title>Home</title>
+		<link rel="icon" type="image/png" sizes="50x50" href="images/logo.png">
+		<link rel="stylesheet" href="style.css" type="text/css">
+	</head>
+	
+	<body>
+		<!-- header -->
+		<table border="0" align="center" width="1000">
+		
+			<tr height="100">
+			
+				<td colspan="5" align="center" bgcolor="#BF9B7C">
+				<p class="header"><b>&#10085;PERSONAL WEBSITE</b></p></td></tr>
+		
+			
+				<tr height="50" align="center" bgcolor="#6F4E37">
+					<td width="140"><a href="index.html"><font color="#FBAF17">Home</font></a></td>
+					<td width="140"><a href="about-me.html"><font color="#FBAF17">About Me</font></a></td>
+					<td width="140"><a href="hobby.html"><font color="#FBAF17">Hobby</font></a></td>
+					<td width="140"><a href="education.html"><font color="#FBAF17">Education</font></a></td>
+					<td width="140"><a href="contact-me.html"><font color="#FBAF17">Contact Me</font></a></td>
+				</tr>
+			</table>
+			</tr>
+			
+			<table border="0" align=center width="1000">
+			<!-- Banner -->
+			</tr>
+			<tr height="30">
+				<td colspan="5"  bgcolor="white">
+				
+				<div class="slideshow-container">
+					<div class="mySlides fade">
+					<div class="numbertext">1 / 3</div>
+					<img src="images/1.jpg" style="width:100%">
+					<div class="text">about me</div>
+				</div>
+
+				<div class="mySlides fade">
+				  <div class="numbertext">2 / 3</div>
+				  <img src="images/2.jpg" style="width:100%">
+				  <div class="text">hobby</div>
+				</div>
+
+				<div class="mySlides fade">
+				  <div class="numbertext">3 / 3</div>
+				  <img src="images/3.jpg" style="width:100%">
+				  <div class="text">education</div>
+				</div>
+
+					<a class="prev" onclick="plusSlides(-1)">❮</a>
+					<a class="next" onclick="plusSlides(1)">❯</a>
+
+				</div>
+				<br>
+
+				<div style="text-align:center">
+				  <span class="dot" onclick="currentSlide(1)"></span> 
+				  <span class="dot" onclick="currentSlide(2)"></span> 
+				  <span class="dot" onclick="currentSlide(3)"></span> 
+				</div>
+				</td>
+				
+				<!-- script for banner -->
+			<script>
+					let slideIndex = 1;
+					showSlides(slideIndex);
+
+					function plusSlides(n) {
+					  showSlides(slideIndex += n);
+					}
+
+					function currentSlide(n) {
+					  showSlides(slideIndex = n);
+					}
+
+					function showSlides(n) {
+					  let i;
+					  let slides = document.getElementsByClassName("mySlides");
+					  let dots = document.getElementsByClassName("dot");
+					  if (n > slides.length) {slideIndex = 1}    
+					  if (n < 1) {slideIndex = slides.length}
+					  for (i = 0; i < slides.length; i++) {
+						slides[i].style.display = "none";  
+					  }
+					  for (i = 0; i < dots.length; i++) {
+						dots[i].className = dots[i].className.replace(" active", "");
+					  }
+					  slides[slideIndex-1].style.display = "block";  
+					  dots[slideIndex-1].className += " active";
+					}
+					</script>
+					
+			<!--main picture and wording -->
+			</tr height="200">
+			<tr align="left" height="200" bgcolor="white">
+				<td></td>
+				<td>
+					<h2>Welcome!</h2>
+					<h1><font color="#FBAF17">Sabrina Sabri</h1>
+					<p><font color="black">&#10048; Hello, I am a student of UiTM Rembau and this is my personal website project.
+					<abbr title="UNIVERSITI TEKNOLOGI MARA">UiTM</a></p>
+					<p><a href="contact-me.html" class="box">contact me now!</a></p></td>
+				<td></td>
+				<td>
+					<p><img src="images/me.png" width="250" height="250" align="center"></p>
+				</td>
+				<td></td>
+
+			</tr>
+			
+			<tr height="50">
+				<td colspan="5" align="center" height="50" bgcolor="white"></td>
+			</tr>
+			
+			<!--seperator -->
+			<tr>
+				<td colspan="5" align="center" height="50" bgcolor="#6F4E37"></td>
+			</tr>
+			
+			<!--seperator -->
+			<tr height="50">
+				<td colspan="5" align="center" height="50" bgcolor="white"></td>
+			</tr>
+			
+			<!-- hobby 1 and 2 -->
+			</tr height="200">
+			<tr align="center" height="200" bgcolor="white">
+				<th width="50" rowspan="2" bgcolor="white"></th>
+				<td width="425" bgcolor="#AD9A8A"><p><a href="about-me.html" class="pic"><img src="images/1.png"></a></p></td>
+				<th width="50" rowspan="2" bgcolor="white"></th>
+				<td  width="425" bgcolor="#AD9A8A"><p><a href="hobby.html" class="pic"><img src="images/2.png"></a></p></td>
+				<th width="50" rowspan="2" bgcolor="white"></th>
+			</tr>
+			
+			<tr align="center">
+				
+				<td bgcolor="#6F4E37" ><p class="nav">about me</p></td>
+				<td bgcolor="#6F4E37"><p class="nav">hobby</p></td>
+
+			</tr>
+			<!-- seperator -->
+			<tr height="50">
+				<td colspan="5" align="center" height="50" bgcolor="white"></td>
+			<!-- hobby 3 and 4 -->
+			</tr>
+			<tr align="center" height="200">
+				<th rowspan="2" bgcolor="white"></th>
+				<td bgcolor="#AD9A8A"><p><a href="education.html" class="pic"><img src="images/3.png"></a></p></td>
+				<th rowspan="2"bgcolor="white"></th>
+				<td bgcolor="#AD9A8A"><p><a href="contact-me.html" class="pic"><img src="images/4.png"></a></p></td>
+				<th rowspan="2" bgcolor="white"></th>
+
+			</tr>
+			<tr align="center">
+				<td bgcolor="#6F4E37"><p class="nav">Education</p></td>
+				<td bgcolor="#6F4E37"><p class="nav">Contact me</p></td>
+
+			</tr>
+			
+			<!--seperator -->
+			<tr height="50">
+				<td colspan="5" align="center" height="50" bgcolor="white"></td>
+			</tr>
+			
+			<!--seperator -->
+			<tr height="50">
+				<td colspan="5" align="left" height="200" bgcolor="#BF9B7C"><marquee><h2><i>&#9998;visit my website for further information :</i></h2></marquee>
+			<ol>
+				<li value="1">Explore about my information for more further.</li>
+				<li value="2">Get to know my hobby and what i like to do the most.</li>
+				<li value="3">Exposure to the level of education and the history of the education level reach by the student.</li>
+				<li value="4">Get the detail contact information in my personal website for any queries.</li>
+			</ol>
+	
+	</td>
+	
+	
+			</tr>
+			<!--last seperator -->
+			<tr height="50">
+				<td colspan="5" align="center" bgcolor="#6F4E37">
+				<p class="seperator">© 2024 | Design by Sabrina Sabri. All right reserved</p></td>
+				
+				
+			</tr>
+		</table>
+		
+		
+	</body>
+	
+</html>
